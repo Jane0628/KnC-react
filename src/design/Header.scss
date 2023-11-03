@@ -3,7 +3,7 @@ header {
   border-bottom: #000000 1px solid;
 
   .align {
-    width: 80%;
+    width: 65%;
     height: 100%;
     margin: 0 auto;
 
@@ -13,6 +13,7 @@ header {
 
     img {
       height: 48px;
+      cursor: pointer;
     }
 
     .right {
@@ -28,30 +29,65 @@ header {
         align-items: center;
         line-height: 24px;
         
-        // 마이 페이지 아이콘
-        svg path {
-          width: 20px;
-          color: #D9D9D9;
-        }
+        .myPage {
+          display: flex;
+          transition: 0.1s ease-in-out;
+          
+          &:hover {
+            font-weight: 700;
+          }
+          
+          // 마이 페이지 아이콘
+          svg path {
+            width: 20px;
+            color: #D9D9D9;
+          }
 
+          a {
+            // width: 70px;
+          }
+        }
+        
         a {
           margin: 0 10px;
           font-size: 15px;
         }
         
         .care {
+          width: 100px;
           font-size: 14px;
           color: red;
           margin: 0 0 0 10px;
+          transition: 0.1s ease-in-out;
+
+          &:hover {
+            font-weight: bold;
+          }
         }
       }
 
       .menus {
         width: 655px;
+        height: 25px;
         font-size: 18px;
         margin-right: 10px;
         display: flex;
         justify-content: space-between;
+
+        a {
+          transition: 0.1s ease-in-out;
+
+          &.english {
+            width: 55px;
+            text-align: center;
+          }
+
+          &:hover {
+            font-weight: 700;
+            border-bottom: 1px solid #000000;
+            cursor: pointer;
+          }
+        }
       }
 
     }

@@ -4,8 +4,13 @@
 /* 수트체 */
 @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css');
 
-header {
+.suit {
   font-family: 'SUIT';
   font-size: 18px;
   font-weight: 400;
+}
+
+.chonburi {
+  font-family: 'Chonburi';
+  font-size: 18px;
 }
